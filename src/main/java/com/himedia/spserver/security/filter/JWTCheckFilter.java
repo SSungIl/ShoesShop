@@ -78,8 +78,8 @@ public class JWTCheckFilter extends OncePerRequestFilter {
 
         if(request.getMethod().equals("OPTIONS"))
             return true;
-        
-        if(path.equals("/member/test"))
+
+        if(path.equals("/product/test"))
             return true;
 
 

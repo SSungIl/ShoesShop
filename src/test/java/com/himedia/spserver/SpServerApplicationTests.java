@@ -30,11 +30,6 @@
 //    @Autowired
 //    ProductRepository pR;
 //
-//    @Test
-//    void contextLoads() {
-//        List<Product>  mlist =pR.findByNameContaining( "부츠" );
-//         System.out.println(mlist.get(0).getName());
 //
-//    }
 //
 //}
