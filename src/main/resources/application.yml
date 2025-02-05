@@ -1,0 +1,34 @@
+server:
+  port: 8070
+
+spring:
+  application:
+    name: SPServer
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ShopJPA
+    username: root
+    password: adminuser
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: heejoonkk@gmail.com
+    password: pkqh fwkb rbcp uhmb
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          timeout: 5000
+
+kakao:
+  client_id: f67ebc2de23039bbce25c7d2583abd81
+  redirect_uri: http://localhost:8070/member/kakaoLogin
